@@ -1,3 +1,4 @@
+require 'set'
 module PpirlHelper
   def get_edit_distance(s1, s2)
     len1 = s1.length
@@ -82,9 +83,68 @@ module PpirlHelper
 
     return finalStr1, finalStr2
   end
+
+
+  def apriori_algorithm(file_path)
+    threshold = 5
+    ans = Hash.new
+
+    # This creates the set of size 1
+    # file_path = "/Users/ankurgupta/Desktop/job/test_data_1.txt"
+    hash = Hash.new
+    hash.default = 0
+    File.foreach(file_path).drop(1).each_slice(2) do |line|
+      values_one = line[0].strip.split(',')
+      values_two = line[1].strip.split(',')
+      for col in 0..values_one.size - 1
+        s1 = Set.new [values_one[col].clone]
+        s2 = Set.new [values_two[col].clone]
+        hash[s1] += 1
+        hash[s2] += 1
+      end
+    end
+
+    while hash.size > 0
+      new_hash = Hash.new
+      new_hash.default = 0
+      hash.each do |set, count|
+        if count < threshold
+          ans[set.clone] = count
+        else
+          File.foreach(file_path).drop(1).each_slice(2) do |line|
+            values_one = line[0].strip.split(',').to_set
+            values_two = line[1].strip.split(',').to_set
+            if set.subset? values_one
+              values_one.each do |value|
+                if !set.include? value
+                  new_hash[set.clone.add(value)] += 1
+                end
+              end
+            end
+
+            if set.subset? values_two
+              values_two.each do |value|
+                if !set.include? value
+                  new_hash[set.clone.add(value)] += 1
+                end
+              end
+            end
+          end
+        end
+        hash = new_hash
+      end
+    end
+
+    return ans
+  end
+
+
 end
 
-include PpirlHelper
+
+# include PpirlHelper
+# file_path = "/Users/ankurgupta/Desktop/job/test_data_1.txt"
+# puts apriori_algorithm(file_path)
 # # Example 1
 # s1 = "Dr. John Naash"
 # s2 = "John Naesh Sr."
