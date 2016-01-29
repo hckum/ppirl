@@ -84,13 +84,23 @@ module PpirlHelper
     return finalStr1, finalStr2
   end
 
+  # This is a private fucntion. Not for public use.
+  # Returns
+  # true if any key in the hash is a subset of the set provided.
+  # false otherwise.
+  def contains(hash, set)
+    hash.each do |this_set, cnt|
+      if this_set.subset? set
+        return true
+      end
+    end
+    return false
+  end
 
-  def apriori_algorithm(file_path)
-    threshold = 5
+  def apriori_algorithm(file_path, threshold)
     ans = Hash.new
 
     # This creates the set of size 1
-    # file_path = "/Users/ankurgupta/Desktop/job/test_data_1.txt"
     hash = Hash.new
     hash.default = 0
     File.foreach(file_path).drop(1).each_slice(2) do |line|
@@ -104,47 +114,89 @@ module PpirlHelper
       end
     end
 
+
+    cnt = 2
+    # On each iteration of this loop, sets of size one larger than the previous size is considered.
     while hash.size > 0
+
+      # Debugging nuisance.
+      puts "Count ", cnt
+      puts "Hash", hash
+
       new_hash = Hash.new
       new_hash.default = 0
+      # Put all the items less than the threshold in the ans hash.
       hash.each do |set, count|
         if count < threshold
           ans[set.clone] = count
-        else
+        end
+      end
+
+      # This loop for all the items with size greater than threshold.
+      hash.each do |set, count|
+        if count >= threshold
+          # For each set, look at all the rows it may be a subset of to create new candidates. For this, we are looking
+          # at the whole file row by row.
           File.foreach(file_path).drop(1).each_slice(2) do |line|
             values_one = line[0].strip.split(',').to_set
-            values_two = line[1].strip.split(',').to_set
+            # If this set is subset of the row, we have to process to create new candidates.
             if set.subset? values_one
+              # We will look at all the values that can be added to the set to form a new candidate.
               values_one.each do |value|
+                # Don't consider if the value is already a part of the set.
                 if !set.include? value
-                  new_hash[set.clone.add(value)] += 1
+                  temp_set = set.clone
+                  temp_set.add(value)
+                  # If any set in the answer is a subset of the new set created here, we don't need to consider the new
+                  # set.
+                  if !contains(ans, temp_set)
+                    new_hash[temp_set.clone] += 1
+                  end
                 end
               end
             end
 
+            # Do everything again for the second row.
+            values_two = line[1].strip.split(',').to_set
             if set.subset? values_two
               values_two.each do |value|
                 if !set.include? value
-                  new_hash[set.clone.add(value)] += 1
+                  temp_set = set.clone
+                  temp_set.add(value)
+                  if !contains(ans, temp_set)
+                    new_hash[temp_set.clone] += 1
+                  end
                 end
               end
             end
+
           end
         end
-        hash = new_hash
       end
+      # Since each set of size k will be from a set of size k - 1 in k ways, we are dividing by k to get the actual
+      # count.
+      new_hash.each do |set, count|
+        new_hash[set] = count/cnt
+      end
+
+      # Debugging nuisance.
+      puts "New hash ", new_hash
+      puts "ans ", ans
+      puts ""
+
+      hash = new_hash.clone
+      cnt += 1
     end
 
     return ans
   end
-
-
 end
 
-
-# include PpirlHelper
-# file_path = "/Users/ankurgupta/Desktop/job/test_data_1.txt"
-# puts apriori_algorithm(file_path)
+# Testing code. TODO To be removed later.
+include PpirlHelper
+threshold = 3
+file_path = "/Users/ankurgupta/Desktop/job/test_data_1.txt"
+puts apriori_algorithm(file_path, threshold)
 # # Example 1
 # s1 = "Dr. John Naash"
 # s2 = "John Naesh Sr."
