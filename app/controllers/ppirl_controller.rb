@@ -1,6 +1,8 @@
 class PpirlController < ApplicationController
   include PpirlHelper
-  $file_path = "/Users/ankurgupta/Desktop/job/test_data.txt"
+  $filepath = ""
+  $threshold = ""
+  $budget = 0
   $values_first = Hash.new{|h, k| h[k] = []}
   $values_second = Hash.new{|h, k| h[k] = []}
   $values_revealed = Hash.new{|h, k| h[k] = []}
@@ -14,8 +16,29 @@ class PpirlController < ApplicationController
 
   $start_index = 0
   $gap = 5
-
+  
   def index
+    #@dbases = Dbase.all #change Dbase.all to final hidden version fdb.all or left index as null with no code
+  end
+  
+  def upload
+    begin
+      $filepath = params[:file].path
+      puts "path = #{$filepath}"
+      $threshlod = params[:threshold]
+      puts "$threshlod=  #{$threshlod}"
+      risky = Hash.new # hash of attribute values which contain privacy risk, key is set of combination of attr values, value is count
+      risky = apriori_algorithm($filepath, $threshold)
+      puts risky
+      redirect_to view_path
+      #redirect_to threshold_path #, notice: 'Database uploaded successfully.' # redirect to view_url(final hidden version fdb.all)
+    rescue
+      redirect_to root_url, notice: 'Invalid CSV file format.' # redirect to root_url showing error
+    end
+  end
+
+
+  def view
     if params['reload'] == '0'
       return
     end
@@ -25,13 +48,13 @@ class PpirlController < ApplicationController
     end
 
     $message = ""
-    file_path = $file_path
-    first_line = File.foreach(file_path).first
+    #puts "@@@@@@@@@@@@@@@@@@@@@@@PATH = #{$filepath}"
+    first_line = File.foreach($filepath).first
     $column_names = first_line.strip.split(',')
     $num_cols = $column_names.size
 
     row = 0
-    File.foreach(file_path).drop(1).each_slice(2) do |line|
+    File.foreach($filepath).drop(1).each_slice(2) do |line|
       values_one = line[0].strip.split(',')
       values_two = line[1].strip.split(',')
       for col in 0..$num_cols - 1

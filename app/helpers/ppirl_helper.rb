@@ -99,7 +99,7 @@ module PpirlHelper
 
   def apriori_algorithm(file_path, threshold)
     ans = Hash.new
-
+    threshold = threshold.to_i
     # This creates the set of size 1
     hash = Hash.new
     hash.default = 0
@@ -193,10 +193,10 @@ module PpirlHelper
 end
 
 # Testing code. TODO To be removed later.
-include PpirlHelper
-threshold = 3
-file_path = "/Users/ankurgupta/Desktop/job/test_data_1.txt"
-puts apriori_algorithm(file_path, threshold)
+#include PpirlHelper
+#threshold = 3
+#file_path = "/home/ubuntu/workspace/test-full.csv"
+#puts apriori_algorithm(@filepath, threshold)
 # # Example 1
 # s1 = "Dr. John Naash"
 # s2 = "John Naesh Sr."

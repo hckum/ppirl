@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'ppirl/index'
+  #get 'index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -7,10 +7,12 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'ppirl#index'
 
-  post 'ppirl/update' => 'ppirl#update'
-  post 'ppirl/update_match' => 'ppirl#update_match'
-  post 'ppirl/go_next' => 'ppirl#go_next'
-  post 'ppirl/go_prev' => 'ppirl#go_prev'
+  get 'view' => 'ppirl#view'
+  post 'upload' => 'ppirl#upload'
+  post 'update' => 'ppirl#update'
+  post 'update_match' => 'ppirl#update_match'
+  post 'go_next' => 'ppirl#go_next'
+  post 'go_prev' => 'ppirl#go_prev'
   # root 'welcome#index'
 
   # Example of regular route:
