@@ -1,0 +1,16 @@
+<% provide(:title, 'DB') %>
+<%= flash[:notice] %>
+<div>
+  <%= form_tag upload_path, multipart: true do %>
+    <p>
+      Upload an input CSV file:<br />
+      <%= file_field_tag :file %>
+    </p>
+    <p>
+      Enter the value of threshold 'K':<br />
+      <%= text_field_tag :threshold, value=5 %>
+    </p>
+    <p>
+      <%= submit_tag 'Submit' %>
+    </p>
+</div>
