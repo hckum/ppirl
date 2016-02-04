@@ -10087,3 +10087,21 @@ Processing by PpirlController#view as HTML
   Parameters: {"reload"=>"0"}
   Rendered ppirl/view.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.24.190.74 at 2016-02-04 20:48:13 +0000
+Cannot render console from 50.24.190.74! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/ppirl/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/app/views/ppirl/index.html.erb:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/ppirl/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/ppirl/index.html.erb:19: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.1ms)
