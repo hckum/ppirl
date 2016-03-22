@@ -59,12 +59,12 @@ function goNext() {
 <h3 class="center" id="response_message">Response message : <%= $message %></h3>
 <h2 class="center">Privacy budget: <%= $privacy_budget %></h2>
 
-<font size="6">
+<font size="5">
 <table border="2" class="center">
   <thead>
     <tr>
-      <% $column_names.each do |col| %>
-        <th><%= col %></th>
+      <% for i in 1..$num_cols-1 %>
+        <th><%= $column_names[i] %></th>
       <% end %>
       <th>Match</th>
     </tr>
@@ -72,7 +72,7 @@ function goNext() {
 
   <% for row in $start_index..[$start_index + $gap, $num_rows - 1].min %>
   <tr>
-    <% for col in 0..$num_cols - 1 %>
+    <% for col in 0..$num_cols - 2 %>
         <% if $values_first_shown[row][col] == $values_second_shown[row][col] %>
             <td onclick="onClickFucntion(<%= row %>, <%= col %>)"><%= $values_first_shown[row][col] %></td>
         <% else %>

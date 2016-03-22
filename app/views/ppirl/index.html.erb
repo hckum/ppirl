@@ -3,8 +3,12 @@
 <div>
   <%= form_tag upload_path, multipart: true do %>
     <p>
-      Upload an input CSV file:<br />
-      <%= file_field_tag :file %>
+      Upload an input CSV file1:<br />
+      <%= file_field_tag :file1 %>
+    </p>
+    <p>
+      Upload an input CSV file2:<br />
+      <%= file_field_tag :file2 %>
     </p>
     <p>
       Enter the value of threshold 'K':<br />
