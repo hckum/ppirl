@@ -1,28 +1,11 @@
-== README
+PPIRL SOFTWARE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+INPUT:
+2 csv files with block variable as 'reg_num' and 'fname'.
+Limitation:
+1) Input csv should have these two attributes, otherwise the code will not run.
+2) Software will run for all the attributes in csv file, user selected attributes is not supported.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+OUTPUT:
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
