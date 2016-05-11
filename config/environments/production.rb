@@ -76,4 +76,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.web_console.whitelisted_ips = '66.64.86.10'
+  config.web_console.whitelisted_ips = '192.168.0.0/16'
 end

@@ -22,7 +22,10 @@ def automatic_linkage (file_paths)
   $first_line = File.foreach(file_paths[0]).first
   $column_names = $first_line.strip.split(',')
   $num_cols = $column_names.size
-  
+  $rows_arr = [0,0]  # initialize to 0 so that rows from db do not keep appending when uploading file again w/o restarting server
+  $totaldb = [] # initialize to 0 so that totalrows from db(db1+db2) do not keep appending when uploading file again w/o restarting server
+  $totaldb1 = [] # initialize to 0 so that totalrows from db1 do not keep appending when uploading file again w/o restarting server
+  $totaldb2 = [] # initialize to 0 so that totalrows from db2 do not keep appending when uploading file again w/o restarting server
   block_var1 = "reg_num"
   block_var2 = "fname"
   link_var = Array[block_var1, block_var2, "lname", "dob"]
@@ -36,38 +39,50 @@ def automatic_linkage (file_paths)
   tuple_table = Hash.new{|h, k| h[k] = []} # hash for counting the tables in which this tuple exists
   graph = Hash.new{|h, k| h[k] = []}	   # adjacency list for graph to run DFS (connected components)
   
-  first_line = File.foreach(file_paths[0]).first
-  col_names = first_line.strip.split(',')
-  col_num = col_names.size
-  puts "col_num= #{col_num}\n"
-  block_index1 = col_names.index(block_var1) - 1 # index of block var 1 in table
-  block_index2 = col_names.index(block_var2) - 1 # index of block var 2 in table
+  $first_line = File.foreach(file_paths[0]).first
+  $col_names = $first_line.strip.split(',')
+  $col_num = $col_names.size
+  puts "$col_num= #{$col_names}\n"
+  puts "$col_num= #{$col_num}\n"
+  block_index1 = $col_names.index(block_var1) - 1 # index of block var 1 in table
+  block_index2 = $col_names.index(block_var2) - 1 # index of block var 2 in table
 
  
   for i in 0..file_paths.size-1 # loop through array of input files
-	File.foreach(file_paths[i]).drop(1).each_slice(1) do |line|
+	 File.foreach(file_paths[i]).drop(1).each_slice(1) do |line|
 #    File.foreach(file_paths[i]) do |line|
-	  puts "line[0]= #{line[0]}\n"
-      tuple = line[0].strip.split(",")
+	  #puts "line[0]= #{line[0]}\n"
+    tuple = line[0].strip.split(",")
 	  tuple.slice!(0)
-	  puts "tuple[0]= #{tuple[0]}\n"
-	  puts "tuple[1]= #{tuple[1]}\n"
-	  puts "tuple[2]= #{tuple[2]}\n"
-	  puts "tuple[3] #{tuple[3]}\n"
-	  puts "tuple[4]= #{tuple[4]}\n"
-	  puts "tuple[5]= #{tuple[5]}\n"
+	  #puts "tuple[0]= #{tuple[0]}\n"
+	  #puts "tuple[1]= #{tuple[1]}\n"
+	  #puts "tuple[2]= #{tuple[2]}\n"
+	  #puts "tuple[3] #{tuple[3]}\n"
+	  #puts "tuple[4]= #{tuple[4]}\n"
+	  #puts "tuple[5]= #{tuple[5]}\n"
+	  $totaldb << tuple;
+	  $rows_arr[i] += 1
+	  if i == 0
+	    $totaldb1 << tuple;
+	  else
+	    $totaldb2 << tuple;
+	  end
+	  if(!tuple[block_index1].blank?)
       block_hash1[tuple[block_index1]] << tuple 
+    end
+    if(!tuple[block_index2].blank?)
       block_hash2[tuple[block_index2]] << tuple  
+    end
 	  tuple_count[tuple] += 1
 	  if !(tuple_table[tuple].include? i+1) 
 	    tuple_table[tuple] << i+1 
 	  end
-    end
+   end
   end
   
   block_hash1.keys.each do |key|
-    puts "#{key}-----"
-	puts "block_hash1[key].size= #{block_hash1[key].size}\n"
+    #puts "#{key}-----"
+	#puts "block_hash1[key].size= #{block_hash1[key].size}\n"
 	if block_hash1[key].size == 1 # this id has no matching row, its single
       unmatched << block_hash1[key]		
 	  next
@@ -79,15 +94,16 @@ def automatic_linkage (file_paths)
 	dup.each do |v|
 		if block_hash1[key].include? v
 			block_hash1[key].delete(v)
+			$duplicates += 2
 		end
 	end
-	puts "block_hash1[key].size= #{block_hash1[key].size}\n"
+	#puts "block_hash1[key].size= #{block_hash1[key].size}\n"
 	#puts "block_hash1[key]= #{block_hash1[key]}\n"
 
     for i in 0..block_hash1[key].size-2
 	  for j in 1..block_hash1[key].size-1
 		flag = 0
-        for k in 0..col_num-2
+        for k in 0..$col_num-2
           if block_hash1[key][i][k] != block_hash1[key][j][k]
             flag = 1
             break
@@ -107,8 +123,8 @@ def automatic_linkage (file_paths)
   end
   
   block_hash2.keys.each do |key|
-    puts "#{key}-----"
-	puts "block_hash2[key].size= #{block_hash2[key].size}\n"
+    #puts "#{key}-----"
+	#puts "block_hash2[key].size= #{block_hash2[key].size}\n"
 	
 	if block_hash2[key].size == 1 # this id has no matching row, its single
       unmatched << block_hash2[key]  
@@ -122,20 +138,21 @@ def automatic_linkage (file_paths)
 	dup.each do |v|
 		if block_hash2[key].include? v
 			block_hash2[key].delete(v)
+			$duplicates += 2
 		end
 	end
-	puts "block_hash2[key].size= #{block_hash2[key].size}\n"
+	#puts "block_hash2[key].size= #{block_hash2[key].size}\n"
 	#puts "block_hash2[key]= #{block_hash2[key]}\n"
  
    for i in 0..block_hash2[key].size-2
-		puts "i = #{i}\n"
+		#puts "i = #{i}\n"
 	  if unmatched.include? block_hash2[key][i]
         unmatched.delete? block_hash2[key][i]
 	  end
 	  for j in i+1..block_hash2[key].size-1
-		puts "j = #{j}\n"
+		#puts "j = #{j}\n"
 		flag = 0
-        for k in 0..col_num-2
+        for k in 0..$col_num-2
           if block_hash2[key][i][k] != block_hash2[key][j][k]
             flag = 1
             break
@@ -146,8 +163,8 @@ def automatic_linkage (file_paths)
         else
           uncertain << block_hash2[key][i]  
           uncertain << block_hash2[key][j] 
-		  puts "block_hash2[key][i]= #{block_hash2[key][i]}\n"
-		  puts "block_hash2[key][j]= #{block_hash2[key][j]}\n"
+		  #puts "block_hash2[key][i]= #{block_hash2[key][i]}\n"
+		  #puts "block_hash2[key][j]= #{block_hash2[key][j]}\n"
 		  graph[block_hash2[key][i]] << block_hash2[key][j]
 		  graph[block_hash2[key][j]] << block_hash2[key][i]
 		  
@@ -162,8 +179,8 @@ def automatic_linkage (file_paths)
 
   puts "graph - adjacency list\n"
   graph.each do |key, value|
-	puts "key = #{key}"
-	puts "value = #{value}\n"
+	#puts "key = #{key}"
+	#puts "value = #{value}\n"
   end
 =begin
   puts "matched\n"
@@ -197,12 +214,12 @@ def automatic_linkage (file_paths)
 	
 	puts "CLUSTER\n"
 	cluster.each do |key, value|
-		puts "key = #{key}"
-		puts "value = #{value}\n"
+		#puts "key = #{key}"
+		#puts "value = #{value}\n"
 		value.each do |val|
-			puts "val = #{val}\n"
+			#puts "val = #{val}\n"
 			val.each do |v|
-				puts "v = #{v}\n"
+				#puts "v = #{v}\n"
 			end
 		end
 			
@@ -235,6 +252,10 @@ end
     finalStr1 = ""
     finalStr2 = ""
     
+    if ((s1.blank?) || (s2.blank?))
+      return "Miss",""
+    end
+=begin
     if ((s1.blank?) && (s2.blank?))
       return finalStr1, finalStr2
     end
@@ -245,7 +266,7 @@ end
     if(s2.blank?)
         return s1, finalStr2
     end
-    
+=end
     
     
     len1 = s1.length
@@ -326,7 +347,7 @@ end
       end
     end
 
-    puts finalStr1, finalStr2
+    #puts finalStr1, finalStr2
 
     return finalStr1, finalStr2
   end
@@ -344,47 +365,37 @@ end
     return false
   end
 
-  def apriori_algorithm(cluster, threshold)
+  def apriori_algorithm(totaldb, threshold)
     ans = Hash.new
     threshold = threshold.to_i
-    # This creates the set of size 1
+    # This creates the set/actually hash of size 1
     hash = Hash.new
     hash.default = 0
     
-    cluster.each do |key, value|
-       if value.size >= 2
-            for i in 0..1
-              if i == 0
-                  values_one = value[i]
-              else
-                  values_two = value[i]
-              end
-            end
-    
-            #File.foreach(file_path).drop(1).each_slice(2) do |line|
-            #  values_one = line[0].strip.split(',')
-            #  values_two = line[1].strip.split(',')
-            for col in 0..values_one.size - 1
-              if(!values_one[col].blank?)
-                s1 = Set.new [values_one[col].clone]
-              end
-              if(!values_two[col].blank?)
-                s2 = Set.new [values_two[col].clone]
-              end
-              hash[s1] += 1
-              hash[s2] += 1
-            end
+    #totaldb.each do |row_val|
+    for i in 0..7  
+      #for col in 0..row_val.size - 1
+      for col in 0..totaldb[i].size - 1
+        #if(!row_val[col].blank?)
+        #puts "totaldb[i][col]== #{totaldb[i][col]}"
+        if(!totaldb[i][col].blank?)
+          # we are creating set because keys in hash can be two column values together for a row
+          # here we are creating hash for all item sets of size 1 i.e. cnt=1
+          #s1 = Set.new [row_val[col].clone]
+          s1 = Set.new [totaldb[i][col].clone]
         end
+        hash[s1] += 1
+      end  
     end
 
-
+    # here we are creating hash for all item sets of size 2 i.e cnt=2 and then increase cnt after every loop
     cnt = 2
     # On each iteration of this loop, sets of size one larger than the previous size is considered.
     while hash.size > 0
 
       # Debugging nuisance.
-      puts "Count ", cnt
-      puts "Hash", hash
+      #puts "Count123 ---->>>>#{cnt}"
+      #puts "Hash", hash
 
       new_hash = Hash.new
       new_hash.default = 0
@@ -400,118 +411,52 @@ end
         if count >= threshold
           # For each set, look at all the rows it may be a subset of to create new candidates. For this, we are looking
           # at the whole file row by row.
-          
-          cluster.each do |key, value|
-            if value.size >= 2
-              for i in 0..1
-                if i == 0
-                    values_one = value[i].to_set
-                else
-                    values_two = value[i].to_set
-                end
-              end
-          
-          #File.foreach(file_path).drop(1).each_slice(2) do |line|
-            #values_one = line[0].strip.split(',').to_set
+          #totaldb.each do |row_val|
+          for i in 0..7 
+            #puts "i===== #{i}"
+            #puts "INSIDE TOTALDB= #{totaldb.size}"
+            
+            #values = row_val.to_set
+            #puts "values=== #{totaldb[i]}\n"
+            values = totaldb[i].to_set
             # If this set is subset of the row, we have to process to create new candidates.
-            if set.subset? values_one
+            if set.subset? values
               # We will look at all the values that can be added to the set to form a new candidate.
-              values_one.each do |value|
+              values.each do |val|
                 # Don't consider if the value is already a part of the set.
-                if !set.include? value
+                if ((!set.include? val) && !val.blank?)
                   temp_set = set.clone
-                  temp_set.add(value)
-                  # If any set in the answer is a subset of the new set created here, we don't need to consider the new
-                  # set.
+                  temp_set.add(val)
+                  # If any set in the answer is a subset of the new set created here, we don't need to consider the new set.
                   if !contains(ans, temp_set)
                     new_hash[temp_set.clone] += 1
                   end
                 end
-              end
+              end  
             end
-
-            # Do everything again for the second row.
-            #values_two = line[1].strip.split(',').to_set
-            if set.subset? values_two
-              values_two.each do |value|
-                if !set.include? value
-                  temp_set = set.clone
-                  temp_set.add(value)
-                  if !contains(ans, temp_set)
-                    new_hash[temp_set.clone] += 1
-                  end
-                end
-              end
-            end
-           end
-          end
-        end
-      end
-      # Since each set of size k will be from a set of size k - 1 in k ways, we are dividing by k to get the actual
-      # count.
+          end # totaldb
+        end # if
+      end # hash
+      
+      # Since each set of size k will be from a set of size k - 1 in k ways, we are dividing by k to get the actual count.
       new_hash.each do |set, count|
         new_hash[set] = count/cnt
       end
 
       # Debugging nuisance.
-      puts "New hash ", new_hash
-      puts "ans ", ans
-      puts ""
+      #puts "New hash ", new_hash
+      #puts "ans ", ans
+      #puts ""
 
       hash = new_hash.clone
-      cnt += 1
-    end
-
+      cnt += 1 # item set size increased by 1
+      puts "CNT----->>>>>>", cnt;
+    end # hash.size>0
+    puts "ans ", ans
     return ans
-  end
-end
-
-=begin
-def automatic_linkage (file_paths)
-  block_var = "reg_num"
-  #link_var = Array[bloack_var, "fname", "lname", "dob"]
-  $matched = Hash.new{|h, k| h[k] = []}
-  $unmatched = Hash.new{|h, k| h[k] = []}
-  $uncertain = Hash.new{|h, k| h[k] = []}
-  $value = Hash.new{|h, k| h[k] = []}
-  $id_hash = Hash.new{|h, k| h[k] = []}
-  
-  first_line = File.foreach(file_paths[0]).first
-  col_names = first_line.strip.split(',')
-  col_num = col_names.size
-  id_index = $col_names.index(block_var) # primary key like reg_num
-   
-  for i in 0..$file_paths.size # loop through array of input files
-    File.foreach(file_paths[i]).drop(1) do |line|
-      value = line.strip.split(',')
-      id_hash[value[id_index]] += value  
-    end
-  end
-  
-  id_hash.keys.each do |key|
-    puts "#{key}-----"
-    if id_hash[key].size == 2 # at least id is same
-      flag = 0
-      for i in 0..col_num
-        if id_hash[key][0][i] != id_hash[key][1][i]
-          flag = 1
-          break
-        end
-      end
-      if flag == 0
-        $matched[key] += id_hash[key]  
-      else
-        $uncertain[key] += id_hash[key]  
-      end
-    else # this id has no matching row, its single
-      $unmatched[key] += id_hash[key]  
-    end
-  end
-
+  end # apriori_algorithm	
   
 end
-=end
-
 # Testing code. TODO To be removed later.
 #include PpirlHelper
 #threshold = 3

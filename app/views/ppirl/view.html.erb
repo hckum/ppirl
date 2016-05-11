@@ -55,14 +55,33 @@ function goNext() {
     window.location.href='/view?reload=0';
 }
 </script>
+<div>
+<h3 class="alignleft">Total Rows in DB1: <%= $rows_arr[0] %> (dup= <%= $autolinked1 %>, unique= <%= $rows_arr[0]-$autolinked1 %>, rem= <%= $rows_arr[0]-$autolinked1-$autolinked %>)</h3>
+<h3 class="alignright">Total Rows in DB2: <%= $rows_arr[1] %> (dup= <%= $autolinked2 %>, unique= <%= $rows_arr[1]-$autolinked2 %>, rem= <%= $rows_arr[1]-$autolinked2-$autolinked %>)</h3>
+<div style="clear: both;"></div>
+</div>
+<div>
+<h3 class="alignleft">Total automatically linked rows: <%= $autolinked %></h3>
+<h3 class="alignright">Total uncertain matches: <%= $num_rows %></h3>
+<div style="clear: both;"></div>
+</div>
+<div>
+<h3 class="alignleft">Threshold: <%= $threshold %></h3>
+<h3 class="alignright">Rare set size: <%= $all_rare_sets.size %></h3>
+<div style="clear: both;"></div>
+</div>
+<div>
+<h3 class="alignleft" id="response_message">Response message : <%= $message %></h3>
+<h2 class="alignright">Privacy budget: <%= ($privacy_budget).round(2) %></h2>
+<div style="clear: both;"></div>
+</div>
 
-<h3 class="center" id="response_message">Response message : <%= $message %></h3>
-<h2 class="center">Privacy budget: <%= $privacy_budget %></h2>
 
 <font size="5">
 <table border="2" class="center">
   <thead>
     <tr>
+      <th>cluster</th>
       <% for i in 1..$num_cols-1 %>
         <th><%= $column_names[i] %></th>
       <% end %>
@@ -72,6 +91,7 @@ function goNext() {
 
   <% for row in $start_index..[$start_index + $gap, $num_rows - 1].min %>
   <tr>
+    <td><%= $cluster_num[row] %></td>
     <% for col in 0..$num_cols - 2 %>
         <% if $values_first_shown[row][col] == $values_second_shown[row][col] %>
             <td onclick="onClickFucntion(<%= row %>, <%= col %>)"><%= $values_first_shown[row][col] %></td>
@@ -98,9 +118,9 @@ function goNext() {
   <% end %>
 
 </table>
-  <div id="mydiv">
+<div id="mydiv">
     <button class="button" onclick="goPrevious()">Previous</button>
     <button class="button" onclick="goNext()">Next</button>
-  </div>
+</div>
 
 </font>
