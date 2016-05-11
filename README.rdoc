@@ -1,11 +1,10 @@
 PPIRL SOFTWARE
 
 INPUT:
-2 csv files with block variable as 'reg_num' and 'fname'.
+2 csv files with block variables as 'reg_num' and 'fname'.
 Limitation:
 1) Input csv should have these two attributes, otherwise the code will not run.
 2) Software will run for all the attributes in csv file, user selected attributes is not supported.
 
 OUTPUT:
-
-
+The linkage of the records
