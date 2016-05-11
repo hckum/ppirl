@@ -54,6 +54,17 @@ function goNext() {
     );
     window.location.href='/view?reload=0';
 }
+
+function finishLink(){
+    $.ajax(
+            {
+                type: 'POST',
+                url: '/finish',
+            }
+    );
+    window.location.href='/view?reload=0';
+}
+
 </script>
 <div>
 <h3 class="alignleft">Total Rows in DB1: <%= $rows_arr[0] %> (dup= <%= $autolinked1 %>, unique= <%= $rows_arr[0]-$autolinked1 %>, rem= <%= $rows_arr[0]-$autolinked1-$autolinked %>)</h3>
@@ -121,6 +132,7 @@ function goNext() {
 <div id="mydiv">
     <button class="button" onclick="goPrevious()">Previous</button>
     <button class="button" onclick="goNext()">Next</button>
+    <button class="button" onclick="finishLink()">FINISH</button>
 </div>
 
 </font>

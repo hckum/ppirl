@@ -1,5 +1,7 @@
 require 'set'
 require 'open-uri'
+require 'csv'
+
 class PpirlController < ApplicationController
   include PpirlHelper
 
@@ -270,4 +272,22 @@ class PpirlController < ApplicationController
     end
     render :plain => "OK"
   end
+
+  def finish
+    puts "HELLO"
+    CSV.open("/home/ubuntu/workspace/Linkage.txt", "w") do |csv|
+      #csv << ["Hello", "WORLD"]
+      for row in 0..$num_rows - 1
+        $is_match[row] = false
+        csv << $values_first[row].split()
+        for col in 0..$num_cols - 1
+          puts $values_first[row][col]
+          csv << $values_first[row][col]
+        end
+        csv << is_match[row]
+      end
+    end
+    render :plain => "OK"
+  end
+  
 end

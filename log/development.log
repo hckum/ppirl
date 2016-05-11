@@ -29713,3 +29713,1475 @@ Cannot render console from 50.24.204.222! Allowed networks: 192.168.0.0/192.168.
 Processing by PpirlController#view as HTML
   Rendered ppirl/view.html.erb within layouts/application (6.7ms)
 Completed 200 OK in 3423ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 50.24.173.241 at 2016-05-11 02:24:57 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ppirl.self-fc742189ce29a6a0735216c9710927c75175bd3b4496e55669437044e76254ec.css?body=1" for 50.24.173.241 at 2016-05-11 02:24:58 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 50.24.173.241 at 2016-05-11 02:24:58 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 50.24.173.241 at 2016-05-11 02:24:58 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 50.24.173.241 at 2016-05-11 02:24:58 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 50.24.173.241 at 2016-05-11 02:24:58 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/assets/ppirl.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 50.24.173.241 at 2016-05-11 02:24:58 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 50.24.173.241 at 2016-05-11 02:24:58 +0000
+Cannot render console from 50.24.173.241! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+
+Started GET "/" for 66.249.85.217 at 2016-05-11 06:13:05 +0000
+Cannot render console from 66.249.85.217! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:31:14 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 320ms (Views: 303.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:31:26 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MdUkRpUklBs4CCZgH7Io26SQzFmWH1TmW5TYCr2RSW/Z5+QxIPEd2rLTYTuUDku0sCABd5OSq6lGaUYnrgKO2Q==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f416105d260 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-13uelk7.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f416105d148 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1gxgqn1.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:31:26 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:39:54 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:39:54 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 41ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:40:04 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+dLveDI9pAk1ISWvJyLMWbaVSvvIz4+t004nKFz6LWUR4C8Ph+gtyL/6YvSsnq82oiWH1c1CcOLOs7kFT2nq0w==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f4161ef7708 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1gkbgvo.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4161ef7578 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-hrvh55.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:40:04 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:40:08 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (18.9ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:40:08 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:40:31 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:40:31 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (19.3ms)
+
+
+Started POST "/go_next" for 66.64.86.10 at 2016-05-11 19:40:33 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#go_next as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:40:34 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:40:35 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (16.9ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:40:35 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:40:37 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (16.7ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:40:37 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:41:41 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:41:42 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:41:49 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rjsdndftnumhYTpfvMpVIS5N119rGAjL3KoLAj2nm1VGCd3qYjgXKCu6fQQ3djZOOv0acW6V94TBV5UvLjRc4w==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x00000004d6e328 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1ox455s.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x00000004d6ddb0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-197bdtb.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:41:49 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:41:51 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (33.9ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:41:52 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:44:16 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:44:16 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:44:26 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F3WTQRMjRlYkQixrWGAAToMkgHkhMSmFPLJtdODtp2L/R1M2pvbPl66ZazDT3GMhl5RNVyS81sohT/NZ835g1A==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f41617adbf0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-qvbg30.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f41617ada60 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-v0584q.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:44:26 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:44:29 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (18.9ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:44:29 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:44:57 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:44:57 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (17.4ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:45:51 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:45:51 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:45:59 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QME1kZKHIKvx7kSbD+nZ9Qh9JH55JF7Li5tC+NFzSZyo8/XmJ1Kpans1A8CEVbqaHM3pUHypoYSWZtzVwuCOKg==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f4162185bf0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-17azcv6.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4162185b50 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-2lsh52.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:46:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:46:02 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+
+ActionController::RoutingError (No route matches [POST] "/finish"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (20.8ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:46:02 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:47:16 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:47:25 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fThvwth+qejHdX3VW7xGvBG5Q/yYIielOIZS9G/teweVCq+1basgKU2uOo7QACXTBQmO0p2v2Oole8zZfH68sQ==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f41617dd148 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1ssnyz7.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f41617dcfb8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-g9lwht.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 47ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:47:25 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:47:27 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "-------:1":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:282:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:281:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:279:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (82.5ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:47:27 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:47:54 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 165ms (Views: 163.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:47:54 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "-------:1":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:282:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:281:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:279:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (68.8ms)
+
+
+Started POST "/go_next" for 66.64.86.10 at 2016-05-11 19:47:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#go_next as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:47:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:47:58 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/go_next" for 66.64.86.10 at 2016-05-11 19:47:58 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#go_next as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/go_next" for 66.64.86.10 at 2016-05-11 19:47:59 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#go_next as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:47:59 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/go_next" for 66.64.86.10 at 2016-05-11 19:48:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#go_next as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:48:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/go_next" for 66.64.86.10 at 2016-05-11 19:48:02 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#go_next as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:48:02 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/go_prev" for 66.64.86.10 at 2016-05-11 19:48:03 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#go_prev as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:48:03 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:48:04 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:48:04 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "-------:1":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:282:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:281:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:279:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (77.5ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:48:36 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:48:36 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:48:43 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m7grGmEZxAuIPJlqIsCgx+YsmdKe535xEP6QOWQtpYhziutt1MxNygLn3jGpfMOo8pxU/JtqgT4NAw4Ud75iPg==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x0000000354f9b8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-mdcy8d.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x0000000354f3f0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-rxo5n.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:48:43 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:48:45 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "-------:1":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:282:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:281:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:279:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (61.6ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:48:45 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:49:17 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:49:17 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "Hello":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:279:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (74.1ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:50:18 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 99ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:50:18 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:50:51 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 121ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:50:51 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:53:32 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:53:32 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:53:45 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:53:45 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:53:53 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZIBpfXICdItOdxGaZ6wckvRkVEGqYmdUucGWoDWHhBOMsqkKx9f9SsSsVsHsEH/94NSZb6/vmBukPAiNJhRDpQ==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f4161024ff0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-wj4yc9.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4161024e60 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-jtt8ox.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:53:53 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:53:55 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_a' for "-------:1":String
+Did you mean?  to_yaml
+               to_date
+               to_param
+               to_d
+               to_f
+               to_i
+               to_s
+               to_r
+               to_c):
+  app/controllers/ppirl_controller.rb:283:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:282:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (11.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (85.2ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:53:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:54:12 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:54:12 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_a' for "-------:1":String
+Did you mean?  to_yaml
+               to_date
+               to_param
+               to_d
+               to_f
+               to_i
+               to_s
+               to_r
+               to_c):
+  app/controllers/ppirl_controller.rb:283:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:282:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (79.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:56:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:56:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:57:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:57:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:57:08 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:57:15 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MnWh7eUX1A8mA0vYaouPZCpAI6PfBTAG3Mbehf9KGuLaR2GaUMJdzqzYDIPhN+wLPvDujdqIz0nBO0Co7NndVA==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f41504021b0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-lfu5ml.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4150402110 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-zbrr5w.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:57:15 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:57:17 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `to_a' for "William":String
+Did you mean?  to_yaml
+               to_date
+               to_param
+               to_d
+               to_f
+               to_i
+               to_s
+               to_r
+               to_c):
+  app/controllers/ppirl_controller.rb:284:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:282:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (71.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:57:17 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:57:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 164ms (Views: 163.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:57:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:58:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:58:00 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:58:08 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nfMq6WRDIxNB7SLb0Kyi8OqWvBj5quOoWXmUicYyVK91weqe0Zaq0ss2ZYBbEMGf/iZxNvwnHOdEhAqk1aGTGQ==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f41626f2598 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-22yat.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f41626f24f8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-fz02wp.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:58:08 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:58:10 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "William":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:284:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:282:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (80.3ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:58:11 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:58:54 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 19:58:54 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 19:59:03 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qRyiuzym0mq/9H9/obvCeZ52daIuymImo2dVmL+M7kJBLmLMiXNbqzUvOCQqB6EWisa4jCtHnWm+msu1rB8p9A==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x00000001f0c278 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1adr4vx.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x00000001ee7720 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1g766c0.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 19:59:03 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 19:59:05 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `is_match' for #<PpirlController:0x007f4162725330>
+Did you mean?  is_a?):
+  app/controllers/ppirl_controller.rb:286:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (77.8ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 19:59:06 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:00:37 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:00:37 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:00:44 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XTkgAg44oSYWXzxUOzRIoCqURpLlJjI+F4lNpMqrN421C+B1u+0o55yEew+wiCvPPiSLvOCrzXEKdNOJ2TjwOw==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x00000004a3fdc8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-18hk1wo.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x00000004a3fc10 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-zdrya3.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 20:00:44 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 20:00:46 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 153ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `is_match' for #<PpirlController:0x00000001dedc20>
+Did you mean?  is_a?):
+  app/controllers/ppirl_controller.rb:286:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (82.7ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 20:00:47 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:01:25 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 116ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:01:32 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1BmEg0DM2EsSklc4BixSzsm7ScGpeEyCGBDSOx34hBs8K0T09RlRiphJEGONkDGh3QuE76z1s80F7UwWDmtDrQ==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f41612231a8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1si8ew.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4161223018 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-19o8hd3.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 20:01:32 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:01:32 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1BmEg0DM2EsSklc4BixSzsm7ScGpeEyCGBDSOx34hBs8K0T09RlRiphJEGONkDGh3QuE76z1s80F7UwWDmtDrQ==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x00000005107200 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-smrp7r.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x00000005106f58 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-eiczoh.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 20:01:32 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 20:01:34 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "William":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:284:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:282:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (104.4ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 20:01:34 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:02:49 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:02:49 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:02:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k4Gm3kDPSWyxUEaW8pCTmXiQtqjDAVYt+sPtxpy8Az57s2ap9RrArTuLAc15LPD2bCB7hsaMqWLnPnPrjy/EiA==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f4161171908 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1xt5trk.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f41611716b0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1aehecz.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:02:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k4Gm3kDPSWyxUEaW8pCTmXiQtqjDAVYt+sPtxpy8Az57s2ap9RrArTuLAc15LPD2bCB7hsaMqWLnPnPrjy/EiA==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f4160fd79d0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1kdxo4s.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4160fd7840 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1n0r5zo.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 20:02:56 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 20:02:59 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "William":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:284:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:282:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (9.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (133.2ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 20:02:59 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:04:02 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:04:02 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:04:10 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"51QY0YasK3u4InucTFOVgQKv9k8wfIFCcWhP2mu5SMwPZtimM3miujL5PMfH7/buFh87YTXxfg1sldH3eCqPeg==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f41617df3a8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-13noizy.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f41617df218 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1w1rc52.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 61ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:04:11 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"51QY0YasK3u4InucTFOVgQKv9k8wfIFCcWhP2mu5SMwPZtimM3miujL5PMfH7/buFh87YTXxfg1sldH3eCqPeg==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f41616534f8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-dg62xm.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4161653368 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-kvme1x.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 20:04:11 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 20:04:13 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `col' for #<PpirlController:0x007f4160ccd3c0>
+Did you mean?  col):
+  app/controllers/ppirl_controller.rb:282:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (110.6ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 20:04:13 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:04:40 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 66.64.86.10 at 2016-05-11 20:04:40 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#index as HTML
+  Rendered ppirl/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:04:47 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLUpNdaxMq18OP6Jjbh6bzHQa/uhuCYImd1iifZ8WgpQh+lCY2S7bPbjudIGBBkAJWCm1aQ12UeEIPyk5e+dvA==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f4161be1668 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1uwjaqc.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4161be14d8 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-d6law2.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 53ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/upload" for 66.64.86.10 at 2016-05-11 20:04:47 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#upload as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLUpNdaxMq18OP6Jjbh6bzHQa/uhuCYImd1iifZ8WgpQh+lCY2S7bPbjudIGBBkAJWCm1aQ12UeEIPyk5e+dvA==", "file1"=>#<ActionDispatch::Http::UploadedFile:0x007f4161a62760 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-44ftaq.csv>, @original_filename="1.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file1\"; filename=\"1.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "file2"=>#<ActionDispatch::Http::UploadedFile:0x007f4161a625d0 @tempfile=#<Tempfile:/home/ubuntu/workspace/RackMultipart20160511-888-1qp65u7.csv>, @original_filename="2.csv", @content_type="application/vnd.ms-excel", @headers="Content-Disposition: form-data; name=\"file2\"; filename=\"2.csv\"\r\nContent-Type: application/vnd.ms-excel\r\n">, "threshold"=>"2", "commit"=>"Submit"}
+Redirected to https://ppirl-prannayjain.c9users.io/view
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/view" for 66.64.86.10 at 2016-05-11 20:04:47 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Rendered ppirl/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/finish" for 66.64.86.10 at 2016-05-11 20:04:49 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#finish as */*
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `map' for "William":String
+Did you mean?  tap):
+  app/controllers/ppirl_controller.rb:285:in `block (3 levels) in finish'
+  app/controllers/ppirl_controller.rb:283:in `block (2 levels) in finish'
+  app/controllers/ppirl_controller.rb:280:in `block in finish'
+  app/controllers/ppirl_controller.rb:278:in `finish'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (77.6ms)
+
+
+Started GET "/view?reload=0" for 66.64.86.10 at 2016-05-11 20:04:49 +0000
+Cannot render console from 66.64.86.10! Allowed networks: 192.168.0.0/192.168.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by PpirlController#view as HTML
+  Parameters: {"reload"=>"0"}
+  Rendered ppirl/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)

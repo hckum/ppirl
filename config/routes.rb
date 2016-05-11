@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   post 'update_match' => 'ppirl#update_match'
   post 'go_next' => 'ppirl#go_next'
   post 'go_prev' => 'ppirl#go_prev'
+  post 'finish' => 'ppirl#finish'
   # root 'welcome#index'
 
   # Example of regular route:
