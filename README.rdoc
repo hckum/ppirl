@@ -9,4 +9,4 @@ Limitation:
 In example folder there are 3 subfolders which has datasets of different sizes. These csv files can be used as input for testing. 
 
 OUTPUT:
-The final linkage of the records. This is saved in Linkage.csv file. Every linkage is separated by '\n'
+The final linkage of the records. This is saved in Linkage.csv file. Every linkage is separated by '\\n'
