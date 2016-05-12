@@ -117,8 +117,8 @@ function finishLink(){
     <% end %>
 
 
-    <td onclick="updateMatchFucntion(<%= row %>, <%= $is_match[row] == true%>)">
-      <% if $is_match[row] == true %>
+    <td onclick="updateMatchFucntion(<%= row %>, <%= $is_match[row] == "true" %>)">
+      <% if $is_match[row] == "true" %>
           Match
       <% else %>
           Not match

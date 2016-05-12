@@ -148,7 +148,7 @@ class PpirlController < ApplicationController
     $num_rows = row
 
     for row in 0..$num_rows - 1
-      $is_match[row] = false
+      $is_match[row] = "false"
     end
 
     #$all_rare_sets = apriori_algorithm($cluster, $threshold)
@@ -251,9 +251,9 @@ class PpirlController < ApplicationController
     row = params['row'].to_i
     already_matched = params['matched']
     if already_matched == "true"
-      $is_match[row] = false
+      $is_match[row] = "false"
     else
-      $is_match[row] = true
+      $is_match[row] = "true"
     end
     render :plain => "OK"
   end
@@ -274,17 +274,18 @@ class PpirlController < ApplicationController
   end
 
   def finish
-    puts "HELLO"
-    CSV.open("/home/ubuntu/workspace/Linkage.txt", "w") do |csv|
-      #csv << ["Hello", "WORLD"]
+    CSV.open("/home/ubuntu/workspace/Linkage.csv", "w") do |csv|
       for row in 0..$num_rows - 1
-        $is_match[row] = false
-        csv << $values_first[row].split()
-        for col in 0..$num_cols - 1
-          puts $values_first[row][col]
-          csv << $values_first[row][col]
-        end
-        csv << is_match[row]
+          linkage = $is_match[row]
+          $values_first_shown[row].pop
+          $values_second_shown[row].pop
+          #puts "value = #{$values_first[row]}"
+          $values_first_shown[row] << linkage
+          $values_second_shown[row] << linkage
+          #puts "NEWvalue = #{$values_first[row]}"
+          csv << $values_first_shown[row]
+          csv << $values_second_shown[row]
+          csv << ['\n']
       end
     end
     render :plain => "OK"

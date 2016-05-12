@@ -372,17 +372,17 @@ end
     hash = Hash.new
     hash.default = 0
     
-    #totaldb.each do |row_val|
-    for i in 0..7  
-      #for col in 0..row_val.size - 1
-      for col in 0..totaldb[i].size - 1
-        #if(!row_val[col].blank?)
+    totaldb.each do |row_val|
+    #for i in 0..7  
+      for col in 0..row_val.size - 1
+      #for col in 0..totaldb[i].size - 1
+        if(!row_val[col].blank?)
         #puts "totaldb[i][col]== #{totaldb[i][col]}"
-        if(!totaldb[i][col].blank?)
+        #if(!totaldb[i][col].blank?)
           # we are creating set because keys in hash can be two column values together for a row
           # here we are creating hash for all item sets of size 1 i.e. cnt=1
-          #s1 = Set.new [row_val[col].clone]
-          s1 = Set.new [totaldb[i][col].clone]
+          s1 = Set.new [row_val[col].clone]
+          #s1 = Set.new [totaldb[i][col].clone]
         end
         hash[s1] += 1
       end  
@@ -411,14 +411,14 @@ end
         if count >= threshold
           # For each set, look at all the rows it may be a subset of to create new candidates. For this, we are looking
           # at the whole file row by row.
-          #totaldb.each do |row_val|
-          for i in 0..7 
+          totaldb.each do |row_val|
+          #for i in 0..7 
             #puts "i===== #{i}"
             #puts "INSIDE TOTALDB= #{totaldb.size}"
             
-            #values = row_val.to_set
+            values = row_val.to_set
             #puts "values=== #{totaldb[i]}\n"
-            values = totaldb[i].to_set
+            #values = totaldb[i].to_set
             # If this set is subset of the row, we have to process to create new candidates.
             if set.subset? values
               # We will look at all the values that can be added to the set to form a new candidate.
