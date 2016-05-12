@@ -6,5 +6,7 @@ Limitation:
 1) Input csv should have these two attributes, otherwise the code will not run.
 2) Software will run for all the attributes in csv file, user selected attributes is not supported.
 
+In example folder there are 3 subfolders which has datasets of different sizes. These csv files can be used as input for testing. 
+
 OUTPUT:
-The linkage of the records
+The final linkage of the records. This is saved in Linkage.csv file. Every linkage is separated by '\n'
